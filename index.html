@@ -53,6 +53,7 @@
         width: auto;
         height: auto;
       }
+
     </style>
 </head>
 <body class="class2">
@@ -131,9 +132,9 @@ allowTransparency="true"></iframe>
 <br/>
 
 <section id="qrcoder" class="section">
-Scan My CSode
+Scan My Code
 <br/>
-<img src=qr.PNG width=200 height=200 />
+<img src=qr.jpg width=200 height=200 />
 
 </section>
 <br/>
@@ -178,27 +179,18 @@ Scan My CSode
 
 <section id="contact" class="section">
   Keep on touch
-<br/>
-<b>
-  Email:
-  <input type="email" size="30">
-<br/>
-<br/>
-<textarea  style="height: 300px;" placeholder="write your message hare"></textarea>
-<br/>
-<br/>
-<strong></strong> choose a Emoji</strong>
-<table class="class3">
-  <tr>
-<td><input type="checkbox" p role="image" > &#128512;</p></td>
-<td><input type="checkbox" p role="image" >&#128520;</p></td>
-<td><input type="checkbox" p role="image" >&#128514;</p></td>
-</tr>
-</table>
-<a href="mailto:galated@post.bgu.ac.il">
-  <input type="submit" value="send to us">
-</b>
-</a>
+  <form action="mailto:galated@post.bgu.ac.il" method="post" enctype="text/plain">
+    E-mail:<br>
+    <input type="email"><br>
+    Message:<br><textarea style="height: 300px;" placeholder="write your message hare" name="comment" size="50"></textarea><br><br>
+    <label for="smile">Smile</label>
+    <select id="smile" name="smile">
+        <option>⚽</option>
+        <option></option>
+    </select>
+    
+    <input type="submit" value="Send to us">
+    </form>
 </section>
 
 
